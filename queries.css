@@ -1,0 +1,31 @@
+@media screen and (max-width: 64rem) {
+  .container {
+    width: 100%;
+    padding: 1rem 3rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  input[type="text"] {
+    padding: 1rem;
+  }
+  button {
+    padding: 1.25rem 0;
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  label {
+    font-size: 1.25rem;
+  }
+
+  .right-column {
+    padding: 1rem;
+  }
+}

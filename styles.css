@@ -1,0 +1,167 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+h1 {
+  color: #333;
+  font-weight: 800;
+  font-size: 44px;
+}
+
+.height-container,
+.weight-container,
+.age-container,
+.bmi-container {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  /* flex: 1; */
+}
+
+.height-container > div {
+  display: flex;
+  gap: 2rem;
+}
+
+label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: cornsilk;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 1.5rem;
+  border-style: none;
+  border-radius: 8px;
+  background-color: cornsilk;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+input[type="select"] {
+  width: 100%;
+  padding: 2rem;
+}
+
+input[type="text"]:focus {
+  background-color: rgb(243, 219, 125);
+  color: rgb(164, 135, 16);
+}
+
+.container {
+  align-items: baseline;
+  max-width: 90rem;
+  /* height: 100vh; */
+  margin: 50px auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+ol {
+  margin-left: 1rem;
+  line-height: 150%;
+}
+
+button {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-right: auto; */
+  background-color: #e77728;
+  color: cornsilk;
+  font-weight: 700;
+  font-size: 1.75rem;
+  padding: 2rem 0;
+  margin-top: 2rem;
+  border-style: none;
+  border-radius: 8px;
+}
+
+button:active {
+  opacity: 75%;
+}
+
+.buttons {
+  display: flex;
+  /* flex: 1; */
+  width: 100%;
+  gap: 1.25rem;
+}
+
+.buttons > * {
+  width: 100%;
+}
+
+.left-column,
+.right-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.right-column {
+  margin: 0 auto;
+  background-color: #042a2b;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+aside {
+  background-color: #042a2b;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.choose-weight,
+.choose-height {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.choose-height {
+  position: relative;
+}
+
+select {
+  padding: 0.5rem;
+  /* position: relative; */
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: cornsilk;
+  color: rgb(0, 0, 105);
+  font-size: 1.125rem;
+  font-weight: 500;
+  appearance: none;
+}
+
+.age-and-height {
+  width: 100%;
+  display: flex;
+  gap: 1.25rem;
+}
+
+.msg {
+  color: cornsilk;
+  font-weight: 600;
+}

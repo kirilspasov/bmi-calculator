@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚨</text></svg>">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <title>BMI Calculator 2024</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-column">
+        <h1>BMI Calculator 2024</h1>
+        <p>
+          The Body Mass Index (BMI) Calculator can be used to calculate BMI
+          value and corresponding weight status while taking age into
+          consideration
+        </p>
+        <h3>BMI</h3>
+        <p>
+          BMI or body mass index is a measurement of a person's leanness or
+          corpulence based on their height and weight, and is intended to
+          quantify tissue mass. It is widely used as a general indicator of
+          whether a person has a healthy body weight for their height.
+          Specifically, the value obtained from the calculation of BMI is used
+          to categorize whether a person is underweight, normal weight,
+          overweight, or obese depending on what range the value falls between.
+        </p>
+        <h3>How to calculate your BMI using our calculator:</h3>
+        <ol>
+          <li class="instructions">Choose measurement units from the dropdown below.</li>
+          <li class="instructions">
+            Enter the needed values in the BMI calculator input fields on the side.
+          </li>
+          <li class="instructions">Press "Calculate" to get the result or "Clear" to clear all input field values and enter new ones</li>
+        </ol>
+        <aside>
+          <div class="choose-weight">
+            <label for="units-weight">Choose units</label>
+            <select name="units" id="units">
+              <option value="choose">Choose option</option>
+              <option value="kg" selected>kg/cm</option>
+              <option value="pounds">lbs/inches</option>
+            </select>
+          </div>
+        </aside>
+      </div>
+      <div class="right-column">
+        <div class="age-and-height">
+          <div class="age-container">
+            <label for="age">Age</label>
+            <input type="text" id="age" />
+          </div>
+          <div class="height-container">
+            <label for="height">Height</label>
+            <input type="text" id="height" />
+          </div>
+        </div>
+        <div class="weight-container">
+          <label for="weight">Weight</label>
+          <input type="text" id="weight" />
+        </div>
+        <div class="buttons">
+          <button class="calculate" type="submit" ">
+            Calculate
+          </button>
+          <button class="clear" onclick="clearValues()">Clear</button>
+        </div>
+        <div class="bmi-container">
+          <label for="bmi">Your BMI:</label>
+          <input type="text" id="bmi" readonly />
+        </div>
+        <div class="msg"></div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
